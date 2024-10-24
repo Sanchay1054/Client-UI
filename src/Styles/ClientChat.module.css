@@ -1,0 +1,148 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    overflow: hidden;
+}
+
+.chatscreen{
+    display: flex;
+    flex-direction: column;
+    width:80vw;
+}
+
+.chathistory{
+    width:20vw;
+    border-right: 1px solid black;
+    height:98vh;
+}
+
+.chat{
+    /* display: flex;
+    flex-direction: column; */
+    height:70vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width:thin;
+}
+
+.user{
+    display: flex;
+    justify-content: end;
+    margin-right: 10vw;
+    padding: 10px;
+    background-color: #CCC;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    max-width:40vw;
+}
+
+.chatuser{
+    display: flex;
+    justify-content: end;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logout{
+    position: absolute;
+    display: flex;
+    justify-content: end;
+}
+
+.chatbot{
+    display:flex;
+    justify-content: start;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.bot{
+    justify-content: start;
+    background-color:#EEE;
+    padding:10px;
+    border-radius: 20px;
+    margin-left:10vw;
+    margin-bottom: 10px;
+    max-width: 40vw;
+}
+
+.initialcontent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    flex-direction: column;
+}
+
+.image{
+    height: 400px;
+    width: 400px;
+}
+
+
+.chatinputcontent{
+    display: flex;
+    justify-content: center;
+}
+
+.input{
+    width:40vw;
+    font-size: 150%;
+    border:0px;
+    background-color: #DDD;
+    border-radius:20px;
+    padding:10px;
+    margin:10px;
+}
+
+.button{
+    max-height: 5vh;
+    align-self: center;
+    font-size:120%;
+    padding:5px;
+    border:0px;
+    border-radius: 10px;
+    background-color: #003bff;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.showhistory{
+    display: none;
+}
+
+@media(max-width:768px)
+{
+    /* .chathistory{
+        display:none;
+    } */
+     .container{
+        display: grid;
+        overflow-y: scroll;
+     }
+     .chathistory{
+        width:auto;
+        border-right: 0px;
+     }
+    .user{
+        margin-right:0px;
+    }
+    .bot{
+        margin-left:0px;
+    }
+    .input{
+        margin:1px;
+        width:80vw;
+    }
+    .button{
+        font-size: 100%;
+    }
+    .showhistory{
+        display: block;
+    }
+    .image{
+        height:200px;
+        width:200px;
+    }
+}

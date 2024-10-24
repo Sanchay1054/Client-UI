@@ -1,0 +1,86 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../Components/LoginClientCompnent/Handle-Big-Clients-Successfully.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(148, 147, 147, 0.1);
+    height:100vh;
+}
+
+.screen{
+    padding:5vh;
+    border: 1px solid black;
+    border-radius: 20px;
+    transition: all 0.3 ease-in-out;
+    backdrop-filter: blur(50px);
+    /* background-color: #FFF; */
+}
+
+.content{
+    font-size: 120%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.head{
+    font-size:200%;
+    color:rgb(207, 14, 14);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:800;
+}
+
+.showpassword{
+    min-width:50px;
+    border-radius:10px;
+    border: 1px solid black;
+    padding:5px;
+    cursor: pointer;
+}
+
+@media(max-width: 768px)
+{
+    .container{
+        background-image: none;
+        background-color: #2178aa;
+    }
+    .screen{
+        flex-direction: column;
+        border:none;
+        padding:2vh;
+    }
+    .head{
+        color:#FFF;
+    }
+    .link{
+        color:rgb(255, 255, 255);
+    }
+}
+
+.loginfooter{
+    font-size:80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+input{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding:5px;
+}
+
+.button{
+    color: #FFF;
+    background-color: #007bff;
+    border: 0px solid black;
+    border-radius:20px;
+    padding:10px;
+    cursor: pointer;
+}
+
+.link{
+    font-weight: 600;
+}
